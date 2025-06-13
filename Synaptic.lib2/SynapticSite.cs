@@ -37,7 +37,7 @@ namespace ahbsd.Synaptic.lib2
         }
 
         /// <inheritdoc />
-        public new object GetService(Type serviceType) => null;
+        public object GetService(Type serviceType) => null;
 
         /// <inheritdoc />
         public IComponent Component { get; }
@@ -49,6 +49,6 @@ namespace ahbsd.Synaptic.lib2
         public bool DesignMode { get; protected internal set; }
 
         /// <inheritdoc />
-        public new string Name { get; set;}
+        public string Name { get; set;}
     }
 }
