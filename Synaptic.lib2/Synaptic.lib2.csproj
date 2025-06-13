@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{CF14C638-0E5B-4885-B7D7-13713E041E65}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ahbsd.Synaptic.lib2</RootNamespace>
+        <AssemblyName>Synaptic.lib2</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+        <DocumentationFile>bin\Debug\Synaptic.lib2.xml</DocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>portable</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>3</WarningLevel>
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+        <DebugSymbols>true</DebugSymbols>
+        <DocumentationFile>bin\Release\Synaptic.lib2.xml</DocumentationFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="JetBrains.Annotations">
+          <HintPath>..\..\..\Applications\Rider.app\Contents\lib\ReSharperHost\TestRunner\net472\JetBrains.Annotations.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="Microsoft.Extensions.Configuration, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Configuration.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.2.2.4\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Logging.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Options, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Options.2.0.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+          <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib" />
+        <Reference Include="Serilog, Version=4.3.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.4.3.0\lib\net471\Serilog.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Extensions.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Extensions.Logging.3.1.0\lib\netstandard2.0\Serilog.Extensions.Logging.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Extensions.Logging.File, Version=3.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Extensions.Logging.File.3.0.0\lib\netstandard2.0\Serilog.Extensions.Logging.File.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Formatting.Compact, Version=1.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Formatting.Compact.1.1.0\lib\net452\Serilog.Formatting.Compact.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Sinks.Async, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Sinks.Async.1.5.0\lib\net461\Serilog.Sinks.Async.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Sinks.File.3.2.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+        </Reference>
+        <Reference Include="Serilog.Sinks.RollingFile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Sinks.RollingFile.3.3.0\lib\net45\Serilog.Sinks.RollingFile.dll</HintPath>
+        </Reference>
+        <Reference Include="System"/>
+        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.ComponentModel.Composition" />
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Design" />
+        <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics" />
+        <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Reflection.Context" />
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Channels, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Threading.Channels.8.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+          <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Windows" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml"/>
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Xml.Serialization" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Axon.cs" />
+        <Compile Include="AxonHill.cs" />
+        <Compile Include="AxonTerminal.cs" />
+        <Compile Include="Components\AxonComponent.cs">
+          <SubType>Component</SubType>
+        </Compile>
+        <Compile Include="Components\AxonComponent.Designer.cs">
+          <DependentUpon>AxonComponent.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Dendrit.cs" />
+        <Compile Include="Events\AddedEventArgs.cs" />
+        <Compile Include="Events\ChangeEventArgs.cs" />
+        <Compile Include="Events\ChangeEventHandler.cs" />
+        <Compile Include="Events\SendEventArgs.cs" />
+        <Compile Include="Interfaces\IAxon.cs" />
+        <Compile Include="Interfaces\IAxonHill.cs" />
+        <Compile Include="Interfaces\IAxonTerminal.cs" />
+        <Compile Include="Interfaces\IDendrit.cs" />
+        <Compile Include="Interfaces\INeuron.cs" />
+        <Compile Include="Interfaces\ISynapticObject.cs" />
+        <Compile Include="Neuron.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="SynapticObject.cs" />
+        <Compile Include="SynapticObject.Designer.cs" />
+        <Compile Include="SynapticSite.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include=".devcontainer\devcontainer.json" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <Import Project="..\packages\Serilog.4.3.0\build\Serilog.targets" Condition="Exists('..\packages\Serilog.4.3.0\build\Serilog.targets')" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\Serilog.4.3.0\build\Serilog.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Serilog.4.3.0\build\Serilog.targets'))" />
+    </Target>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
