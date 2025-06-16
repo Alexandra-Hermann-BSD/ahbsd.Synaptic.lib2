@@ -6,11 +6,18 @@
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
         <ProjectGuid>{CF14C638-0E5B-4885-B7D7-13713E041E65}</ProjectGuid>
+        <PackageId>ahbsd.Synaptic.lib2</PackageId>
+        <Version>2.0.0</Version>
+        <Authors>Heinrich Alexandra Hermann</Authors>
+        <Company>ahbsd</Company>
+        <Description>Synaptic library for the Synaptic framework.</Description>
+        <README>README.md</README>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>ahbsd.Synaptic.lib2</RootNamespace>
         <AssemblyName>Synaptic.lib2</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,6 +46,7 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.7.0" PrivateAssets="all" />
         <Reference Include="JetBrains.Annotations">
           <HintPath>..\..\..\Applications\Rider.app\Contents\lib\ReSharperHost\TestRunner\net472\JetBrains.Annotations.dll</HintPath>
         </Reference>
@@ -152,6 +160,9 @@
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="README.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <Import Project="..\packages\Serilog.4.3.0\build\Serilog.targets" Condition="Exists('..\packages\Serilog.4.3.0\build\Serilog.targets')" />
